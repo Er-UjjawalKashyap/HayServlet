@@ -9,10 +9,26 @@
         <servlet-name>hello</servlet-name>
         <servlet-class>com.servlet.ujjwal.HayServlet</servlet-class>
     </servlet>
+    <servlet>
+        <servlet-name>gens</servlet-name>
+        <servlet-class>com.servlet.ujjwal.SecondGenricServlet</servlet-class>
+    </servlet>
+    <servlet>
+    <servlet-name>Httpserv</servlet-name>
+    <servlet-class>com.servlet.ujjwal.HtttpServlet</servlet-class>
+</servlet>
 
     //mapping
     <servlet-mapping>
         <servlet-name>hello</servlet-name>
         <url-pattern>/myservlet</url-pattern>
     </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>gens</servlet-name>
+        <url-pattern>/genserv</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+    <servlet-name>Httpserv</servlet-name>
+    <url-pattern>/httpn</url-pattern>
+</servlet-mapping>
 </web-app>

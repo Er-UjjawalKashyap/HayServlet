@@ -23,8 +23,8 @@ public class HayServlet implements Servlet {
         resp.setContentType("text/html");
         //resp.setContentType("text/img");
         PrintWriter out=resp.getWriter();
-        out.println("<h1>My RESUME</h1>");
-        out.println("<h1>Date "+new Date() .toString() +"</h1>");
+        out.print("<h1>My RESUME</h1>");
+        out.print("<h1>Date "+new Date() .toString() +"</h1>");
 
     }
 
