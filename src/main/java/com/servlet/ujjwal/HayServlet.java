@@ -3,6 +3,8 @@ package com.servlet.ujjwal;
 import javax.servlet.*;
 
 import java.io.IOException;
+import java.io.PrintWriter;
+import java.util.Date;
 
 public class HayServlet implements Servlet {
 
@@ -17,6 +19,12 @@ public class HayServlet implements Servlet {
     @Override
     public void service(ServletRequest req, ServletResponse resp) throws ServletException, IOException {
         System.out.println("Service is being processed .............");
+        //this is content of response or dynamic page content
+        resp.setContentType("text/html");
+        //resp.setContentType("text/img");
+        PrintWriter out=resp.getWriter();
+        out.println("<h1>My RESUME</h1>");
+        out.println("<h1>Date "+new Date() .toString() +"</h1>");
 
     }
 
